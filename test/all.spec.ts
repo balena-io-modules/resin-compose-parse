@@ -4,7 +4,7 @@ import * as utils from './utils';
 
 import * as compose from '../src';
 
-['1.0', '2.0', '2.1'].forEach((version) => {
+['1.0', '2.0', '2.1', '3.8'].forEach((version) => {
 	const services = [
 		{ serviceName: 's1', image: { context: './' } },
 		{ serviceName: 's2', image: 'some/image' },
@@ -246,9 +246,7 @@ describe('validation', () => {
 				},
 			});
 		};
-		expect(f).to.throw(
-			'data/services/main/ports/0 should match format "ports"',
-		);
+		expect(f).to.throw('data/services/main/ports/0 must match format "ports"');
 	});
 
 	it('should not fail if a volume definition is present', () => {
