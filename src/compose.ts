@@ -37,11 +37,11 @@ export function defaultComposition(
 			context = 'build: "."';
 		}
 	}
-	return `# Auto-generated compose file by resin-compose-parse@v${packageVersion}
+	return `# Auto-generated compose file by balena-compose-parse@v${packageVersion}
 version: '2.1'
 networks: {}
 volumes:
-  resin-data: {}
+  balena-data: {}
 services:
   main:
     ${context}
@@ -50,13 +50,13 @@ services:
     restart: always
     network_mode: host
     volumes:
-      - resin-data:/data
+      - balena-data:/data
     labels:
-      io.resin.features.kernel-modules: 1
-      io.resin.features.firmware: 1
-      io.resin.features.dbus: 1
-      io.resin.features.supervisor-api: 1
-      io.resin.features.resin-api: 1
+      io.balena.features.kernel-modules: 1
+      io.balena.features.firmware: 1
+      io.balena.features.dbus: 1
+      io.balena.features.supervisor-api: 1
+      io.balena.features.balena-api: 1
 `;
 }
 
