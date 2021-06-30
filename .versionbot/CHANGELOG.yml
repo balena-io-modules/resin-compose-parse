@@ -1,4 +1,16 @@
 - commits:
+    - subject: Rename to balena-compose-parse
+      hash: 50d1241881350286d4375b45c28370799641dc47
+      body: ''
+      footer:
+        Change-type: major
+        change-type: major
+        Signed-off-by: Robert Günzler <robertg@balena.io>
+        signed-off-by: Robert Günzler <robertg@balena.io>
+      author: Robert Günzler
+  version: 3.0.0
+  date: 2021-06-30T16:25:19.225Z
+- commits:
     - subject: Drop circle ci checks
       hash: cc6308168569c2e2aac88192d3e09495ade378cb
       body: ''
